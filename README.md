@@ -16,7 +16,7 @@ You can find an example of a panel with 4000 haplotypes with the chromosome leng
 
 To run the program for detecting the IBDs with a minimum length of 3 Mbps type:
 
-`RaPID_v.1.2 -i 4k_1e7_e0.001 -o output -r 40 -w 95 -s 20 -l 3.0 -t 10`
+`RaPID_v.1.2 -i 4k_1e7_e0.001 -o output -r 10 -w 150 -s 2 -l 3.0 -t 10`
 
 The program outputs all detected IBD segments in the following format:
 MATCH <hap1_index> <hap2_index> <starting_position> <ending_position> <length>
