@@ -1,10 +1,10 @@
 # Random Projection-based IBD Detection (RaPID)
     
-RaPID is free for academic use. For commercial use, please contact authors.
-RaPID is based on Richard Durbin's PBWT (richarddurbin/pbwt).
-
-Authors: Ardalan Naseri, Xiaoming Liu, Shaojie Zhang <shzhang@cs.ucf.edu>, Degui Zhi <Degui.Zhi@uth.tmc.edu>
-
+The RaPID Technology is based on Richard Durbin’s PBWT (richarddurbin/pbwt). RaPID is free for academic and research use only. This allowance excludes the use and/or re-use of any portion of RaPID for any Commercial Use. The term “Commercial Use” means use of RaPID, including without limitation, for direct or indirect financial, commercial, or strategic gain or advantage, including, without limitation: (a) bundling or integrating RaPID, in any format, with any hardware product and/or another software product or printed and/or electronic materials for transfer, sale, or license to a third party; (b) providing third parties with any part of RaPID for use with hardware or another software product or printed and/or electronic materials purchased by that third party; or (c) use in connection with the performance of services for which the user is compensated.
+ 
+For Commercial Use inquiries, please contact the below authors:
+ 
+Authors: Ardalan Naseri, Xiaoming Liu, Shaojie Zhang shzhang@cs.ucf.edu, Degui Zhi Degui.Zhi@uth.tmc.edu.
 
 
 ## Example:
