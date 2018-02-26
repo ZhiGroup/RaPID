@@ -7,11 +7,11 @@ For Commercial Use inquiries, please contact the below authors:
 Authors: Ardalan Naseri, Xiaoming Liu, Shaojie Zhang shzhang@cs.ucf.edu, Degui Zhi Degui.Zhi@uth.tmc.edu.
 
 ## Example (v.1.6):
-You can find an example of a panel with 4000 haplotypes with the chromosome length of 10 Mbps in the examples folder. Unzip the file using:
+You can find an example of a panel with 4000 haplotypes with the chromosome length of 10 Mbps in the examples folder.
 
 To run the program for detecting the IBDs with a minimum length of 3 Mbps type:
 
-`RaPID_v.1.2 -i 4k_1e7_e0.001 -o output -r 10 -w 0.005 -s 2 -l 3.0 -g genetic_map_4k.map`
+`RaPID_v.1.2 -i 4k_1e8_e0.0025.vcf.gz -o output -r 10 -w 0.005 -s 2 -l 3.0 -g genetic_map_4k.map`
 
 
 The program outputs all detected IBD segments in the following format:
