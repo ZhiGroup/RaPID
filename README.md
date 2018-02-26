@@ -15,8 +15,7 @@ To run the program for detecting the IBDs with a minimum length of 3 Mbps type:
 
 
 The program outputs all detected IBD segments in the following format:
-MATCH <sample_id1> <sample_id2> <starting_position> <ending_position> <length>
-<starting_position> denotes the genomic start of the IBD segment. <ending_position> denotes the end of the IBD segments, respectively.
+MATCH <sample_id1> <sample_id2> <starting_position> <ending_position> <length>. <starting_position> denotes the genomic start of the IBD segment. <ending_position> denotes the end of the IBD segments, respectively.
 
 The file genetic_map_4k.map contains the genetic mapping. In addition, a mask file can be provided with the tag -x for skipping certain regions.
 The folder _genetic\_maps_ contains the genetic mapping files for hg19, hg38. The folder _mask\_file_ contains the mask files for two chromosomes (chr2 and chr15) in hg19 and hg38. 
