@@ -38,3 +38,10 @@ To run the program for detecting the IBDs with a minimum length of 3 Mbps type:
 The program outputs all detected IBD segments in the following format:
 MATCH <hap1_index> <hap2_index> <starting_position> <ending_position> <length>
 <starting_position> denotes the start of the IBD segments in terms of variant sites. <ending_position> denotes the end of the IBD segments, respectively.
+ 
+## Citations
+
+Ultra-fast Identity by Descent Detection in Biobank-Scale Cohorts using Positional Burrows-Wheeler Transform
+Ardalan Naseri, Xiaoming Liu, Shaojie Zhang, Degui Zhi
+bioRxiv 103325; doi: https://doi.org/10.1101/103325
+https://www.biorxiv.org/node/29448
