@@ -21,10 +21,11 @@ You can also find the genetic mapping file for the dataset in the examples folde
 
 To run the program for detecting the IBDs with a minimum length of 1.5 Mbps type:
 
-`RaPID_v.1.3 -i 4k_1e7_e0.001 -o output -r 10 -w 80 -s 2 -l 1500000 -t 10000000 -d 1.5 -g 4k_1e7_e0.001.g`
+`RaPID_v.1.2.3 -i 4k_1e7_e0.001 -o output -r 10 -w 80 -s 2 -l 1500000 -t 10000000 -d 1.5 -g 4k_1e7_e0.001.g`
 <br/>
 -l Specify the minimum lengths of the IBD segment in terms of genomic distance and <br/>
 -d Specify the minimum length in terms of genetic distance.
+<br/>
 <br/>
 The program outputs all detected IBD segments in the following format:
 MATCH <hap1_index> <hap2_index> <starting_position> <ending_position> <length>
