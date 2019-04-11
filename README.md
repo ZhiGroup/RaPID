@@ -32,7 +32,7 @@ MATCH <hap1_index> <hap2_index> <starting_position> <ending_position> <length>
 <starting_position> denotes the start of the IBD segments in terms of variant sites. <ending_position> denotes the end of the IBD segments, respectively.
  
 
-## Example (v.1.6):
+## Example (v.1.6): (deprecated)
 You can find an example of a panel with 4000 haplotypes with the chromosome length of 10 Mbps in the examples folder _4k_1e8_e0.0025.vcf.gz_.
 
 To run the program for detecting the IBDs with a minimum length of 3 Mbps type:
