@@ -3,11 +3,11 @@
 RaPID is an ultra-fast tool for the identification of identity-by-descent segments among genotyped individuals. Simulation results proved that our tool (RaPID) achieves almost linear scaling up to sample size and is orders of magnitude faster than GERMLINE. At the same time, RaPID maintains a detection power and accuracy superiour or comparable to existing mainstream algorithms, GERMLINE and IBDseq. With our tool, it is feasible to identify IBDs in biobank-scale cohorts.
 
 
-*The RaPID Technology is based on Richard Durbin’s PBWT (richarddurbin/pbwt). RaPID is free for academic and research use only. This allowance excludes the use and/or re-use of any portion of RaPID for any Commercial Use. The term “Commercial Use” means use of RaPID, including without limitation, for direct or indirect financial, commercial, or strategic gain or advantage, including, without limitation: (a) bundling or integrating RaPID, in any format, with any hardware product and/or another software product or printed and/or electronic materials for transfer, sale, or license to a third party; (b) providing third parties with any part of RaPID for use with hardware or another software product or printed and/or electronic materials purchased by that third party; or (c) use in connection with the performance of services for which the user is compensated.*
+*The RaPID Technology is based on Richard Durbin’s PBWT (richarddurbin/pbwt). RaPID is free for academic and research use only. This allowance excludes the use and/or re-use of any portion of RaPID for any Commercial Use. The term “Commercial Use” means use of RaPID, including without limitation, for direct or indirect financial, commercial, or strategic gain or advantage, including, without limitation: (a) bundling or integrating RaPID, in any format, with any hardware product and/or another software product or printed and/or electronic materials for transfer, sale, or license to a third party; (b) providing third parties with any part of RaPID for use with hardware or another software product or printed and/or electronic materials purchased by that third party; or (c) use in connection with the performance of services for which the user is compensated.
  
 For Commercial Use inquiries, please contact the below authors:
  
-Authors: Ardalan Naseri, Xiaoming Liu, Shaojie Zhang shzhang@cs.ucf.edu, Degui Zhi Degui.Zhi@uth.tmc.edu.
+Authors: Ardalan Naseri, Xiaoming Liu, Shaojie Zhang shzhang@cs.ucf.edu, Degui Zhi Degui.Zhi@uth.tmc.edu.*
 
 
 ## Example (v.1.2.3):
