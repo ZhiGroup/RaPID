@@ -121,16 +121,31 @@ def tp(er,N,L,rho,r,c,w):
     return 1 - sum
 
 
-def compute_w(error_rate,N,L,rho,r,c):
-    fun = lambda w: 0.5* N*(N-1)*fp(error_rate,N,L,w_rho_func(w),r,c,w) / tp(error_rate,N,L,w_rho_func(int(w)),r,c,w)
+def compute_w(error_rate,N,L,rho,r,c,max_w=300):
+	fun = lambda w: 0.5* N*(N-1)*fp(error_rate,N,L,w_rho_func(w),r,c,w) / tp(error_rate,N,L,w_rho_func(int(w)),r,c,w)
 
-    bnds = ((0, None))
-    x0 = 40
-    cons = ({'type': 'ineq', 'fun': lambda w:  0.5*N*(N-1)*fp(error_rate,N,L,w_rho_func(w),r,c,w) - tp(error_rate,N,L,w_rho_func(int(w)),r,c,w)})
+    #bnds = ((0, None))
+    #x0 = 40
+	lambda_val = 0.5* N*(N-1)
+	w_min = -1
+	_started = False
+	for w in range(1,max_w):
+		_tp = tp(error_rate,N,L,w_rho_func(int(w)),r,c,w)
+		_fp = fp(error_rate,N,L,w_rho_func(w),r,c,w)
+		if (round(_tp,2) -  0.5* N*(N-1)* round(_fp,2)) == 1:
+			if (_started):
+				continue
+			else:
+				w_min = w
+				_started = True
+		elif _started:
+			print (w_min,w)
+			return 0
+	#cons = ({'type': 'ineq', 'fun': lambda w:  0.5*N*(N-1)*fp(error_rate,N,L,w_rho_func(w),r,c,w) - tp(error_rate,N,L,w_rho_func(int(w)),r,c,w)})
+    #res = scipy.optimize.minimize(fun,[x0], method='COBYLA', tol=1e-1,bounds=bnds)#,constraints=cons)
 
-    res = scipy.optimize.minimize(fun,[x0], method='COBYLA', tol=1e-1,bounds=bnds)#,constraints=cons)
 
-    print (res)
+    #print (res)
 
 
 
@@ -158,4 +173,4 @@ if __name__ == '__main__':
 	min_length_SNPs = 12000#14000
 	rho_initial = 0.9
 	compute_mafs(vcf_input,max_window_size)
-	compute_w(error_rate,num_haps,min_length_SNPs,rho_initial,num_runs,num_success)
+	compute_w(error_rate,num_haps,min_length_SNPs,rho_initial,num_runs,num_success,max_window_size)
