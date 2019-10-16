@@ -20,7 +20,7 @@ Usage:
 `./RaPID_v.1.2.4 -i <input_file_vcf_compressed>  -g <genetic_mapping_file> -d <min_length_in_cM> -o <output_folder>   -w  <window_size>  -r <#runs> -s <#success>`
 
 
-You can find an example of a panel with 4000 haplotypes with the chromosome length of 10 Mbps in the examples folder _4k_1e8_e0.0025.vcf.gz_. The file 4k_1e7_e0.001.g contains the genetic mapping for the example file.
+You can find an example of a panel with 4000 haplotypes with the chromosome length of 10 Mbps in the examples folder _4k_1e7.vcf.gz_. The file _4k_1e7_e0.001.g_ contains the genetic mapping for the example file.
 
 
 To run the program for detecting the IBDs with a minimum length of 5 cM type:
