@@ -97,7 +97,9 @@ MATCH <hap1_index> <hap2_index> <starting_position> <ending_position> <length>
  
 ## Citations
 
-Ultra-fast Identity by Descent Detection in Biobank-Scale Cohorts using Positional Burrows-Wheeler Transform
+1. Naseri, Ardalan, Xiaoming Liu, Kecong Tang, Shaojie Zhang, and Degui Zhi. "RaPID: ultra-fast, powerful, and accurate detection of segments identical by descent (IBD) in biobank-scale cohorts." Genome biology 20, no. 1 (2019): 143; doi: https://doi.org/10.1186/s13059-019-1754-8 
+
+2. Ultra-fast Identity by Descent Detection in Biobank-Scale Cohorts using Positional Burrows-Wheeler Transform
 Ardalan Naseri, Xiaoming Liu, Shaojie Zhang, Degui Zhi
 bioRxiv 103325; doi: https://doi.org/10.1101/103325
 https://www.biorxiv.org/node/29448
