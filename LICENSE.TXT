@@ -1,0 +1,10 @@
+The RaPID Technology is based on Richard Durbin’s PBWT (richarddurbin/pbwt). RaPID is free for academic and research use only. This allowance excludes the use and/or re-use of any portion of RaPID for any Commercial Use. The term “Commercial Use” means use of RaPID, including without limitation, for direct or indirect financial, commercial, or strategic gain or advantage, including, without limitation: (a) bundling or integrating RaPID, in any format, with any hardware product and/or another software product or printed and/or electronic materials for transfer, sale, or license to a third party; (b) providing third parties with any part of RaPID for use with hardware or another software product or printed and/or electronic materials purchased by that third party; or (c) use in connection with the performance of services for which the user is compensated.
+
+The source code of the RaPID version 1.2.3 is released under the GNU General Public License version 2 (https://opensource.org/licenses/GPL-2.0).
+
+RaPID is free for academic and research use only. For Commercial Use inquiries, please contact the below authors:
+
+Shaojie Zhang shzhang@cs.ucf.edu, Degui Zhi Degui.Zhi@uth.tmc.edu.
+
+
+ 
