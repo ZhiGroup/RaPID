@@ -4,7 +4,7 @@ RaPID is an ultra-fast tool for the identification of identity-by-descent segmen
 
 RaPID is free for academic and research use only.  For Commercial Use inquiries, please contact the below authors:
  
-Authors: Ardalan Naseri, Xiaoming Liu, Shaojie Zhang shzhang@cs.ucf.edu, Degui Zhi Degui.Zhi@uth.tmc.edu.
+Authors: Shaojie Zhang shzhang@cs.ucf.edu, Degui Zhi Degui.Zhi@uth.tmc.edu.
 
 
 ## RaPID (v.1.7):
