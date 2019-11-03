@@ -2,6 +2,8 @@
 
 RaPID is an ultra-fast tool for the identification of identity-by-descent segments among genotyped individuals. Simulation results proved that our tool (RaPID) achieves almost linear scaling up to sample size and is orders of magnitude faster than GERMLINE. At the same time, RaPID maintains a detection power and accuracy superiour or comparable to existing mainstream algorithms, GERMLINE and IBDseq. With our tool, it is feasible to identify IBDs in biobank-scale cohorts.
 
+For technical issues and bug report, please use GitHub issues.
+
 RaPID is free for academic and research use only.  For Commercial Use inquiries, please contact the below authors:
  
 Authors: Shaojie Zhang shzhang@cs.ucf.edu, Degui Zhi Degui.Zhi@uth.tmc.edu.
