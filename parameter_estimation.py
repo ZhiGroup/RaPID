@@ -2,10 +2,10 @@ import scipy
 import scipy.optimize
 import random
 import math
-
+import gzip
 import statsmodels.api as sm
 lowess = sm.nonparametric.lowess
-
+import re
 import operator as op
 from functools import reduce
 
@@ -17,7 +17,7 @@ w_rho_vals = []
 def compute_mafs(vcf_input,max_window_size):
         global w_rho_vals
        # w_rho_vals.append(1)
-        f = open(vcf_input)
+        f = gzip.open(vcf_input,'rt')
         entries_started = False
 
         expected_vals = []
@@ -42,7 +42,7 @@ def compute_mafs(vcf_input,max_window_size):
                         num_ones = 0
                         num_zeros = 0
                         while (i < len(_values)):
-                                        vals = _values[i].split('/')
+                                        vals = re.split('\||/',_values[i])
                                         if (vals[0] == '1'):
                                                 num_ones = num_ones + 1
                                         elif (vals[0] == '0'):
@@ -141,6 +141,9 @@ def compute_w(error_rate,N,L,rho,r,c,max_w=300):
 		elif _started:
 			print (w_min,w)
 			return 0
+	print (w_min,max_w)
+
+
 	#cons = ({'type': 'ineq', 'fun': lambda w:  0.5*N*(N-1)*fp(error_rate,N,L,w_rho_func(w),r,c,w) - tp(error_rate,N,L,w_rho_func(int(w)),r,c,w)})
     #res = scipy.optimize.minimize(fun,[x0], method='COBYLA', tol=1e-1,bounds=bnds)#,constraints=cons)
 
