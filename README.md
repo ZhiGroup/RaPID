@@ -32,7 +32,7 @@ The program outputs all detected IBD segments in the following format:
  
 Genetic Mapping File Format (tab-delimited):
 `<site_number> <genetic_location>`
-Each line contains the site index and genetic location of a site, the same order as the VCF input file. Please note that the genetic mapping file should be monotically increasing and the genetic locaion should be provided for each site. We have provided two Python scripts to filter the genetic mapping file and also a python script to interpolate the genetic locaions. 
+Each line contains the site index and genetic location of a site, the same order as the VCF input file. Please note that the genetic mapping file should be monotically increasing and the genetic location should be provided for each site. We have provided two Python scripts to filter the genetic mapping file and also a python script to interpolate the genetic locations. 
 
 Usage:
 
