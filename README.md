@@ -42,7 +42,7 @@ Usage:
 `python interpolate_loci.py <filtered_map> <vcf_input_gzip> <output_map_file>`
 
 
-If the marker density of your data is low, you will have to decrease the window size accordingly. For example, for UK-Biobank, the maker density was 80-10 times less than the attached example, and we used -w 3 instead of 250 for 5 cM minimum target lengths. We have provided a script on to estimate the parameters.
+If the marker density of your data is low, you will have to decrease the window size accordingly. For example, for UK-Biobank, the maker density was 80-10 times less than the attached example, and we used -w 3 instead of 250 for 5 cM minimum target lengths. We have provided a script to estimate the parameters.
 
 ## Citations
 
