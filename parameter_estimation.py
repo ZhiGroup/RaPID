@@ -70,7 +70,8 @@ def compute_mafs(vcf_input,max_window_size):
                         for j in range(0,window_size):
                                 if (i + j >= len(mafs)):
                                         continue
-                                expected_maf += (mafs[i+j] * mafs[i+j]/_sum)
+				if (_sum != 0):
+                                	expected_maf += (mafs[i+j] * mafs[i+j]/_sum)
                         expected_vals.append(expected_maf)
 
                 import numpy
