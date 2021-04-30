@@ -174,7 +174,7 @@ if __name__ == '__main__':
 		num_success = int(sys.argv[6])
 	max_window_size = 300
 	#error_rate = 0.0025
-	min_length_SNPs = 12000#14000
+	#min_length_SNPs = 12000#14000
 	rho_initial = 0.9
 	compute_mafs(vcf_input,max_window_size)
 	compute_w(error_rate,num_haps,min_length_SNPs,rho_initial,num_runs,num_success,max_window_size)
