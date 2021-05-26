@@ -6,6 +6,8 @@ For technical issues and bug report, please use GitHub issues.
  
 Authors: Shaojie Zhang shzhang@cs.ucf.edu, Degui Zhi Degui.Zhi@uth.tmc.edu.
 
+All versions of RaPID are under The MIT License.
+Copyright (c) 2016-2021 The University of Texas Health Science Center at Houston and The University of Central Florida.
 
 ## RaPID (v.1.7):
 
