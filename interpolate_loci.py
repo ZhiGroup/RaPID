@@ -13,7 +13,7 @@ map_filepath = sys.argv[1]
 vcf_input = sys.argv[2] 
 output_file = sys.argv[3]
 
-f = gzip.open(vcf_input)
+f = gzip.open(vcf_input ,'rt')
 _started = False
 
 _sites = []
