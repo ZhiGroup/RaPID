@@ -44,6 +44,30 @@ Usage:
 
 If the marker density of your data is low, you will have to decrease the window size accordingly. For example, for UK-Biobank, the maker density was 80-10 times less than the attached example, and we used -w 3 instead of 250 for 5 cM minimum target lengths. We have provided a script to estimate the parameters.
 
+## Running RaPID on UK Biobank (UKBB)
+
+The genetic map files (deCODE, hg19) are in `genetic_maps/decode_hg19.gz`, with per-chromosome files extracted to `genetic_maps/deCODE_cut/` (e.g., `1.txt`, `2.txt`, …). First, generate the per-site genetic map for each chromosome using `interpolate_loci.py`, then run RaPID with parameters tuned for UKBB array density (3 cM target length):
+
+```bash
+for chr in {1..22}; do
+    # Generate per-site genetic map
+    python interpolate_loci.py \
+        genetic_maps/deCODE_cut/${chr}.txt \
+        ukbb_chr${chr}.vcf.gz \
+        genetic_maps/ukbb_chr${chr}.g
+
+    # Run RaPID
+    ./RaPID_v.1.7 \
+        -i ukbb_chr${chr}.vcf.gz \
+        -g genetic_maps/ukbb_chr${chr}.g \
+        -d 3 \
+        -w 3 \
+        -r 10 \
+        -s 2 \
+        -o output/chr${chr}
+done
+```
+
 ## Citations
 
 1. Naseri, Ardalan, Xiaoming Liu, Kecong Tang, Shaojie Zhang, and Degui Zhi. "RaPID: ultra-fast, powerful, and accurate detection of segments identical by descent (IBD) in biobank-scale cohorts." Genome biology 20, no. 1 (2019): 143; doi: https://doi.org/10.1186/s13059-019-1754-8 
